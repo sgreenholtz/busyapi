@@ -21,14 +21,14 @@ The API consists of a single endpoint which receives data when a patient uses th
 ````
 {
     "patientId":100,
-    "timestamp":"",
-    "medication":"",
+    "timestamp":"Tue Nov 01 2016 09:11:51 GMT-0500 (CDT)",
+    "medication":"Albuterol",
 }
 ````
 
 **Request**
 
-     curl -X POST -H "Content-Type: application/json" --data '{"patientId":"100","timestamp":"","medication":"Albuterol"}' http://localhost:3000/api/usages
+     curl -X POST -H "Content-Type: application/json" --data '{"patientId":"100","timestamp":"Tue Nov 01 2016 09:11:51 GMT-0500 (CDT)","medication":"Albuterol"}' http://localhost:3000/api/usages
 
 **Response**
 ````
