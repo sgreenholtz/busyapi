@@ -9,11 +9,11 @@ A sample API server for use as an optimization subject.
 ##API
 The API consists of a single endpoint which receives data when a patient uses their inhaler.
 
-##Usage
-*  method: POST
-*  endpoint: /api/usages
-*  data: JSON usage object
-*  result: JSON object containing the usageId, HTTP Status 201, 200, 500
+##Add Usage
+*  **method**: POST
+*  **endpoint**: /api/usages
+*  **data**: JSON usage object
+*  **result**: JSON object containing the usageId, HTTP Status 201, 200, 500
 
 ###Example
 
