@@ -17,7 +17,7 @@ The API consists of a single endpoint which receives data when a patient uses th
 
 ###Example
 
-**Data
+**Data**
 ````
 {
     "patientId":100,
@@ -26,10 +26,10 @@ The API consists of a single endpoint which receives data when a patient uses th
 }
 ````
 
-**Request
+**Request**
     curl -X POST -H "Content-Type: application/json" --data '{"patientId":"100","timestamp":"","medication":"Albuterol"}' http://localhost:3000/api/usages
 
-**Response
+**Response**
 ````
 {
     "id":22954
