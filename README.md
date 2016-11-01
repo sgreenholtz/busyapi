@@ -27,7 +27,8 @@ The API consists of a single endpoint which receives data when a patient uses th
 ````
 
 **Request**
-    curl -X POST -H "Content-Type: application/json" --data '{"patientId":"100","timestamp":"","medication":"Albuterol"}' http://localhost:3000/api/usages
+
+     curl -X POST -H "Content-Type: application/json" --data '{"patientId":"100","timestamp":"","medication":"Albuterol"}' http://localhost:3000/api/usages
 
 **Response**
 ````
