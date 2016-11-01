@@ -1,9 +1,7 @@
 module.exports = function(app){
     app.post('/api/usages', function(req, res){
 
-        console.log('got POST /api/usages');
-        console.log('usage JSON: ' + JSON.stringify(req.body));
-
+        // Store the supplied usage data
         app.usages.push(req.body);
 
         var usageId = app.usages.length;
