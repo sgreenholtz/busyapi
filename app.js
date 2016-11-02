@@ -9,11 +9,24 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+var fs = require('fs');
 
 // simple in-memory usage store
 var usages = [];
 app.usages = usages;
+var count = 0;
+app.count = count;
 
+// append function for array dump
+if (app.count % 1000 == 0) {
+  fs.appendFile('usages.txt', usages, function (err) {
+    if (err) {
+     return console.error(err);
+   }
+   console.log(usages);
+   usages = [];
+  });
+}
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
